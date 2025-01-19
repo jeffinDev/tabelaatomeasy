@@ -3,8 +3,14 @@
   <title>Tabela Periódica dos Elementos</title>
   <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Importando Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
+      /* Configuração de fontes globais */
       body {
+          font-family: 'Roboto', sans-serif; /* Substitua 'Roboto' pela fonte de sua preferência */
           transform: rotate(-90deg);
           transform-origin: left top;
           width: 100vh;
@@ -13,7 +19,9 @@
           position: absolute;
           top: 100%;
           left: 0;
+          margin: 0; /* Remove margens padrão */
       }
+
       @media (orientation: landscape) {
           body {
               transform: none;
@@ -22,6 +30,16 @@
               overflow: auto;
               position: static;
           }
+      }
+
+      /* Estilo adicional para títulos */
+      h1, h2, h3 {
+          font-weight: 700; /* Aplica um peso mais forte aos títulos */
+      }
+
+      /* Parágrafos e textos gerais */
+      p {
+          font-weight: 400; /* Mantém o texto comum legível */
       }
   </style>
 </head>
